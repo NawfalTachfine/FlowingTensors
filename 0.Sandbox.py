@@ -28,7 +28,7 @@ y = a*x_data+b
 
 # optimization parameters
 loss = tf.reduce_mean( tf.square( y-y_data ) )
-optimizer = tf.train.GradientDescentOptimizer(0.5) # why 0.5?
+optimizer = tf.train.GradientDescentOptimizer(0.5) # step size
 train = optimizer.minimize(loss)
 
 # doc says:
